@@ -119,6 +119,56 @@
       table {
         width: 100%;
       }
+
+      @media print {
+        body {
+          max-width: 100%;
+          padding: 0;
+          font-size: 11px;
+        }
+
+        h1 {
+          font-size: 32px;
+          margin-top: 0;
+          margin-bottom: 8px;
+        }
+
+        h2 {
+          font-size: 16px;
+          margin-top: 12px;
+          margin-bottom: 6px;
+          page-break-after: avoid;
+        }
+
+        p,
+        li {
+          font-size: 11px;
+          line-height: 1.35;
+        }
+
+        ul {
+          margin-top: 2px;
+          margin-bottom: 6px;
+        }
+
+        /* Keep each job/project entry on one page */
+        p:has(> strong) {
+          page-break-after: avoid;
+        }
+
+        li {
+          page-break-inside: avoid;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+
+        hr {
+          margin: 6px 0;
+        }
+      }
     </style>
   </head>
 
@@ -196,6 +246,24 @@
             <strong>Flutter</strong>,
             <strong>WordPress</strong>,
             <strong>Shopify</strong>
+          </li>
+        </ul>
+      </dd>
+      <dt>AI &amp; LLMs</dt>
+      <dd>
+        <ul>
+          <li>
+            <strong>LLM API Integration</strong> (<strong>OpenAI</strong>,
+            <strong>Anthropic Claude</strong>, <strong>Gemini</strong>)
+          </li>
+          <li>
+            <strong>AI-Assisted Development</strong> (<strong>Claude Code</strong>,
+            <strong>Cursor</strong>, <strong>GitHub Copilot</strong>),
+            <strong>Prompt Engineering</strong>
+          </li>
+          <li>
+            <strong>AI Chatbots &amp; Automation</strong> (<strong>RAG</strong>,
+            <strong>n8n</strong>, <strong>AI Agents</strong>)
           </li>
         </ul>
       </dd>
@@ -338,6 +406,45 @@ Realty.com has 1,000,000+ homes for sale listings in the United States. Whether 
           <li>Develop web-based applications & business websites for clients</li>
           <li>Bug fix existing applications</li>
         </ul>
+      </li>
+    </ul>
+
+    <h2 id="projects">Projects &amp; Portfolio</h2>
+    <ul>
+      <li>
+        <p>
+          <strong><a href="https://toborlife.ai" target="_blank">Toborlife AI</a></strong> —
+          Business website for a Silicon Valley robotics company & authorized Unitree
+          distributor, one of the fastest-growing robot sellers in the US. WordPress
+          build I lead, develop & maintain, with product pages, lead generation &
+          full SEO / performance optimization.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><a href="https://realty.com" target="_blank">Realty.com</a></strong> —
+          High-traffic US real estate platform with 1,000,000+ live listings, recognized
+          among America's fastest-growing companies. Worked full stack: frontend,
+          back-end & REST APIs powering the website & mobile apps.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Realty.com Mobile Apps</strong> — Property search & agent portal apps
+          I built for Realty.com. iOS:
+          <a href="https://apps.apple.com/us/app/realty-com/id6467031537" target="_blank">Realty.com</a>,
+          <a href="https://apps.apple.com/us/app/realty-portal/id6739125013" target="_blank">Realty Portal</a>.
+          Android:
+          <a href="https://play.google.com/store/apps/details?id=app.realty.com" target="_blank">Realty.com</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><a href="https://destinationmahjongg.com" target="_blank">Destination Mah Jongg</a></strong> —
+          WordPress business website I built for a US events company running Mah Jongg
+          tournaments, cruises & retreats, with event registration & SEO — generated
+          $30,000+ in sales within 24 hours of launch.
+        </p>
       </li>
     </ul>
 
